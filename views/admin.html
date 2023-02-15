@@ -1,0 +1,34 @@
+<html>
+  <header>
+    <link rel="stylesheet" href="/styles.css">
+  </header>
+<body onload="GetWordTables()">
+ <h1>WELCOME TO THE ADMIN PAGE</h1>
+<div id="page_container"></div>
+  <div class="banner"></div>
+    <div id="function_container">
+        <div id="add_word_container">
+          <form action="/auth/insertword" method="post">
+            <label for="word">Word:</label><br>
+            <input type="text" id="word" name="word" value="" placeholder="Enter word"><br>
+            <label for="translations">Translations:</label><br>
+            <input type="text" id="translations" name="translations" value="" placeholder="translation1,translation2"><br><br>
+            <input type="submit" value="Add word">
+          </form> 
+        </div>
+        <div id="table_filter_container">
+            <input type="search" oninput="FilterWords()" id="filter" name="filter" value="" placeholder="Filter by word">
+            <div id="table_container">
+              <table id="word_table">
+                
+              </table>
+            </div>
+            
+        </div>
+        
+    </div>
+  <div class="banner"></div>
+
+ <script src="/builder.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body onload="FirstStart()" >
+  <div id="big_container">
+      <div id="scoreboard_container">
+        <div id="scoreboard">
+          <p id="scoreboard_matched" class="score">0</p>
+          <p id="scoreboard_lost" class="score">0</p>
+        </div>
+          <div id="last_word_holder">
+          <p id="last_word"> </p>
+        </div>
+     </div>
+     <div id="container">
+        <canvas id="game" width="1000px" height ="400px"></canvas>
+        <div id ="text_container">
+          <p id="play_button" class="hotbar" onclick="Play()">Play</p>
+          <p id="pause_button" class="hotbar"
+          onclick="Pause()">Pause</p>
+        </div>
+       <a href='/auth/admin'><button>Admin</button></a>
+    </div>
+    
+  </div>
+  <div id="help_container">
+         <p id="help">Type the translation of the word (Dutch/English) to gain fuel from the clouds and continue your air balloon adventure! Don't miss too many, or your balloon will run out of fuel! (o.o)('')</p>
+       </div>
+ 
+  <img src="https://i.imgur.com/XHWTNyN.jpg" alt=""id="bg" hidden>
+  <img src="https://i.imgur.com/tX6Wmpz.png" alt="" id="bg_clouds" hidden>
+  <img src="https://i.imgur.com/naQ20cH.png" hidden id="cloud_scroll" alt="">
+  <img src="https://i.imgur.com/Le479eE.png" hidden id="char_sprite" alt="">
+  <img src="https://i.imgur.com/6iDZitJ.png" hidden id="word_bubble" alt="">
+<script src="lib.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
